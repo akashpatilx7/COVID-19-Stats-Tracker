@@ -2,7 +2,7 @@ A Web-App built using Chart.js which can be used to view COVID-19 Live Statistic
 Disease to plot the graph using Chart.js. Also, the Web-App is "Fully Responsive".
 
 
-NOTE : The Output Files/ Images for the "COVID-19-Stats-Tracker" Project have been attached as "SCREENSHOTS" in the "img" folder.
+NOTE : The Output Files/ Images for the "COVID-19-Stats-Tracker" Project have been attached as "SCREENSHOTS" in the "img" folder. (As the deployment on the "Github Pages" is getting an unresolvable error/ bug)
 
 
 
