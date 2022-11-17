@@ -205,12 +205,16 @@ let country_list = [
     { name: 'China', code: 'CN' }
 ];
 
+
+
 // SELECT SEARCH COUNTRY ELEMENTS
 const search_country_element=document.querySelector(".search-country");
 const country_list_element=document.querySelector(".country-list");
 const change_country_btn=document.querySelector(".change-country");
 const close_list_btn=document.querySelector(".close");
 const input=document.getElementById('search-input');
+
+
 
 // CREATE THE COUNTRY LIST 
 function createCountryList(){
@@ -230,9 +234,9 @@ function createCountryList(){
         `;
     })
 }
-
 let num_of_ul_lists=3;
 createCountryList();
+
 
 
 // SHOW HIDE THE COUNTRY LIST ONCLICK EVENT 
@@ -249,10 +253,13 @@ close_list_btn.addEventListener("click", function(){
 });
 
 
+
 // ADDING AN EVENT LISTENER TO THE COUNTRY LIST ELEMENT SO AS IT GETS DISAPPEARED ON CLICKING ON A PARTICULAR COUNTRY
 country_list_element.addEventListener("click", function(){
     search_country_element.classList.toggle("hide");
 });
+
+
 
 // FILTERING THE COUNTRIES ON THE BASIS OF SEARCH INPUT THAT THE USER GIVES (SHOWING ONLY THAT SPECIFIC COUNTRIES WHICH CONTAIN THE PARTICULAR TEXT ENETERED/ BEING SEARCHED BY THE USER)
 // input event fires up whenever the value of the input changes
@@ -269,6 +276,8 @@ input.addEventListener("input",function(){
         }
     })
 }); 
+
+
 
 // RESETTING THE COUNTRY LIST (i.e SHOWING ALL THE COUNTRIES IN OUR COUNTRY LIST)
 function resetCountryList(){
