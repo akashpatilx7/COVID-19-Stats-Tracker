@@ -1,8 +1,8 @@
 /* ---------------------------------------------- */
 /*                  LOADING THE FONTS                    */
 /* ---------------------------------------------- */
-@font-face{
-  font-family: 'Gilroy';
+@font-face {
+  font-family: "Gilroy";
   src: url(./Gilroy-Regular.woff) format(woff);
 }
 
@@ -11,34 +11,34 @@
 /* ---------------------------------------------- */
 /*                    GENERAL                     */
 /* ---------------------------------------------- */
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Gilroy', sans-serif; 
+  font-family: "Gilroy", sans-serif;
   /* Here, an extra font "sans-serif" is given if in case there is a problem in loading the Primary Font.  */
 }
 
-html{
+html {
   font-size: 16px;
 }
 
-.hide{
+.hide {
   display: none;
   /* In case, we need to hide any element in the whole website, we wil use this class  */
 }
 
-.fadeIn{
+.fadeIn {
   animation: fade 0.5s ease-in-out;
 }
 
-@keyframes fade{
-  0%{
+@keyframes fade {
+  0% {
     opacity: 0;
   }
 
-  100%{
-    opacity: 1; 
+  100% {
+    opacity: 1;
   }
 }
 
@@ -47,7 +47,7 @@ html{
 /* ---------------------------------------------- */
 /*                    HEADER                      */
 /* ---------------------------------------------- */
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,21 +55,23 @@ header{
   width: 100%;
   height: 60px;
   margin: 0 auto;
-  background-color: #F3F2F2;
+  background-color: #f3f2f2;
 }
 
+
+
 /* -------- LOGO -------- */
-.logo{
+.logo {
   display: flex;
   align-items: center;
   padding-left: 20px;
 }
 
-.logo img{
+.logo img {
   width: 60px;
 }
 
-.logo p{
+.logo p {
   font-weight: bold;
   color: #6a149b;
 }
@@ -77,96 +79,108 @@ header{
 
 
 /* -------- NAV -------- */
-nav{
+nav {
 
 }
 
-nav ul{
+nav ul {
   display: flex;
   /* By setting the display of a particular element to "FLEX", we take all the elements present within that div/ element in a Horizontal Line */
   align-items: center;
 }
 
-nav ul li{
+nav ul li {
   list-style: none;
 }
 
-nav ul li:last-child{
+nav ul li:last-child {
   padding-right: 20px;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: #6a149b;
   padding: 10px;
-
 }
+
+
+
 /* ---------------------------------------------- */
 /*                      MAIN                      */
 /* ---------------------------------------------- */
-main{
+main {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+
+
 /* -------- BACKGROUND IMAGE -------- */
-.stats{
+.stats {
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('../img/bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/bg.jpg");
   background-size: cover;
 }
+
+
+
 /* -------- LATEST REPORT -------- */
-.latest-report{
+.latest-report {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
   margin: 0 auto;
   padding-top: 50px;
-  color: #FFF;
+  color: #fff;
 }
 
-.country, .total-cases, .recovered, .deaths{
+.country,
+.total-cases,
+.recovered,
+.deaths {
   height: 100px;
 }
 
-.name{
+.name {
   font-size: 2.2em;
   color: #be64f1;
   font-weight: bold;
 }
 
-.change-country{
+.change-country {
   cursor: pointer;
 }
 
-.title{
+.title {
   font-size: 1.3em;
 }
 
-.total-cases .value{
+.total-cases .value {
   font-size: 2em;
   font-weight: bold;
 }
 
-.recovered .value{
+.recovered .value {
   font-size: 2em;
   font-weight: bold;
   color: #009688;
-
 }
-.deaths .value{
+.deaths .value {
   font-size: 2em;
   font-weight: bold;
   color: #f44336;
 }
 
-.new-value{
+.new-value {
   font-size: 1.3em;
 }
 
+
+
 /* -------- CHART -------- */
-.chart{
+.chart {
   width: 80%;
   height: 70vh;
   min-height: 500px;
@@ -174,13 +188,17 @@ main{
   padding: 50px 0;
 }
 
+
+
 /* -------- SEARCH COUNTRY -------- */
-.search-country{
+.search-country {
   position: relative;
   top: 10px;
 }
 
-.search-box{
+
+
+.search-box {
   position: absolute;
   display: flex;
   align-items: center;
@@ -188,27 +206,27 @@ main{
   width: 400px;
   height: 30px;
   background-color: #111;
-  z-index: 1; 
+  z-index: 1;
   /* To take a particular element "On Top Of" the other elements */
 }
 
-.search-box input{
+.search-box input {
   width: 360px;
   height: 25px;
   border: none;
   background-color: transparent;
-  color: #FFF;
+  color: #fff;
   padding-left: 15px;
   font-size: 1.1em;
 }
 
-.search-box img{
+.search-box img {
   width: 20px;
   padding-right: 5px;
   cursor: pointer;
 }
 
-.country-list{
+.country-list {
   display: flex;
   position: absolute;
   top: 30px;
@@ -219,20 +237,23 @@ main{
   overflow-y: scroll;
 }
 
-.country-list ul{
+.country-list ul {
   width: 100%;
 }
 
-.country-list ul li{
+.country-list ul li {
   list-style: none;
   cursor: pointer;
   padding: 10px;
-  color: #FFF;
+  color: #fff;
 }
 
-.country-list ul li:hover{
-  border-left: 1px solid #FFF;
+.country-list ul li:hover {
+  border-left: 1px solid #fff;
 }
+
+
+
 /* SCROLL BAR */
 
 /* ---------------------------------------------- */
@@ -242,46 +263,51 @@ main{
 
 /* Handle */
 .country-list::-webkit-scrollbar-thumb {
-  background: #F1F1F1;
+  background: #f1f1f1;
 }
 
 /* Handle on hover */
 .country-list::-webkit-scrollbar-thumb:hover {
-  background: #FFF;
+  background: #fff;
 }
+
+
 
 /*                    FOOTER                      */
 /* ---------------------------------------------- */
-footer{
+footer {
   max-width: 1200px;
   height: 60px;
   margin: 0 auto;
   background-color: #6a149b;
 }
 
-.footer-container{
+.footer-container {
   height: 100%;
   display: flex;
   justify-content: center;
 }
 
-.copyright{
+.copyright {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.copyright p{
-  color: #FFF;
+.copyright p {
+  color: #fff;
 }
+
+
+
 /* ---------------------------------------------- */
 /*             SCREEN WIDTH < 600px               */
 /* ---------------------------------------------- */
-@media screen and (max-width:600px){
-  .latest-report{
+@media screen and (max-width: 600px) {
+  .latest-report {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }  
+  }
 }
