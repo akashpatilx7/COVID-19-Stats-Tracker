@@ -1,0 +1,2 @@
+A Web-App built using Chart.js which can be used to view COVID-19 Live Statistics of any Country across the world according to the Country Name chosen by the user with a simple, clean and eye-catching user interface ! The COVID-19-Stats-Tracker Web-App uses the "GeoPlugin" API to fetch all the data related to COVID-19 
+Disease to plot the graph using Chart.js. Also, the Web-App is "Fully Responsive". 
